@@ -12,7 +12,7 @@ import SpeechRecognitionComponent from "@/components/SpeechRecognition/SpeechRec
 import TextArea from "@/components/Inputs/TextArea";
 import FileUpload from "@/components/Inputs/FileUpload";
 import LinkPaste from "@/components/Inputs/LinkPaste";
-// import LanguageSelector from "@/components/Inputs/LanguageSelector";
+import LanguageSelector from "@/components/Inputs/LanguageSelector";
 // import useTranslate from "@/hooks/useTranslate";
 // import { rtfToText } from "@/utils/rtfToText";
 
@@ -139,15 +139,15 @@ const Home: React.FC = () => {
                   />
                   <div className="flex flex-row justify-between w-full">
                     <span className="cursor-pointer flex items-center space-x-2 flex-row">
-                      {/* <LanguageSelector
+                      <LanguageSelector
                         selectedLanguage={selectedLanguage}
                         setSelectedLanguage={setSelectedLanguage}
                         languages={languages}
                       />
                       <IconVolume
                         size={22}
-                        onClick={() => handleAudioPlayback(targetText)}
-                      /> */}
+                        // onClick={() => handleAudioPlayback(targetText)}
+                      />
                     </span>
                     <div className="flex flex-row items-center space-x-2 pr-4 cursor-pointer">
                       <IconCopy size={22} onClick={handleCopyToClipboard} />
