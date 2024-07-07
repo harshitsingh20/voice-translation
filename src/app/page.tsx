@@ -10,8 +10,8 @@ import {
 } from "@tabler/icons-react";
 import SpeechRecognitionComponent from "@/components/SpeechRecognition/SpeechRecognition";
 import TextArea from "@/components/Inputs/TextArea";
-// import FileUpload from "@/components/Inputs/FileUpload";
-// import LinkPaste from "@/components/Inputs/LinkPaste";
+import FileUpload from "@/components/Inputs/FileUpload";
+import LinkPaste from "@/components/Inputs/LinkPaste";
 // import LanguageSelector from "@/components/Inputs/LanguageSelector";
 // import useTranslate from "@/hooks/useTranslate";
 // import { rtfToText } from "@/utils/rtfToText";
@@ -121,8 +121,8 @@ const Home: React.FC = () => {
                         size={22}
                         onClick={() => handleAudioPlayback(sourceText)}
                       />
-                      {/* <FileUpload handleFileUpload={handleFileUpload} />
-                      <LinkPaste handleLinkPaste={handleLinkPaste} /> */}
+                      <FileUpload handleFileUpload={handleFileUpload} />
+                      <LinkPaste handleLinkPaste={handleLinkPaste} />
                     </span>
                     <span className="text-sm pr-4">
                       {sourceText.length} / 2000
